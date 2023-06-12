@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @WebServlet(name = "showDateOfWeek", value = "/dateOfWeek")
 public class HomeServletTask2 extends HttpServlet {
     private String message;
-//1
+//11
 
     public void init() {
         message = "Current time: " + LocalDate.of(2020,10,15).getDayOfWeek();
