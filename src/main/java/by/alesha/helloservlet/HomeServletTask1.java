@@ -16,7 +16,7 @@ public class HomeServletTask1 extends HttpServlet {
     public void init() {
         message = "Current time: " + LocalDateTime.now();
     }
-//1
+//11
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
