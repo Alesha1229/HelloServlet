@@ -1,4 +1,4 @@
-package by.alesha.helloservlet;
+package by.alesha.helloservlet.FirstHomework;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,17 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-@WebServlet(name = "showDateOfWeek", value = "/dateOfWeek")
-public class HomeServletTask2 extends HttpServlet {
+@WebServlet(name = "showDateOfYear", value = "/dateOfYear")
+public class HomeServletTask3 extends HttpServlet {
     private String message;
-//11
+
 
     public void init() {
-        message = "Current time: " + LocalDate.of(2020,10,15).getDayOfWeek();
+        message = "Current time: " + LocalDate.of(2020,10,15).getDayOfYear();
     }
-
+//11
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 

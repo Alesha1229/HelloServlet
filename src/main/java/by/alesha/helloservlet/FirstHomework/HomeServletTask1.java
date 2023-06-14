@@ -1,4 +1,4 @@
-package by.alesha.helloservlet;
+package by.alesha.helloservlet.FirstHomework;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDateTime;
 
-@WebServlet(name = "showDate", value = "/currentDate")
+@WebServlet(name = "show-date", value = "/currentDate")
 public class HomeServletTask1 extends HttpServlet {
     private String message;
 
